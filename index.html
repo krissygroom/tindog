@@ -49,17 +49,19 @@
         </nav>
 
         <!-- Title -->
-
         <div class="row">
           <div class="col-lg-6">
             <h1 class="title-heading">Meet new and interesting dogs nearby.</h1>
-            <button type="button" class="btn btn-dark btn-lg apple-btn">
+            <button
+              type="button"
+              class="btn btn-dark btn-lg download-button apple-btn"
+            >
               <i class="fa-brands fa-apple"></i>
               Download
             </button>
             <button
               type="button"
-              class="btn btn-outline-light btn-lg google-btn"
+              class="btn btn-outline-light btn-lg download-button google-btn"
             >
               <i class="fa-brands fa-google-play"></i>
               Download
@@ -78,15 +80,38 @@
 
     <!-- Features -->
 
+    <!-- setting gradients for SVGs  -->
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" class="svg-settings">
+      <defs>
+        <linearGradient id="linear">
+          <stop class="linear-stop1" offset="0%"></stop>
+          <stop class="linear-stop2" offset="100%"></stop>
+        </linearGradient>
+      </defs>
+    </svg>
+
     <section id="features">
-      <h3>Easy to use.</h3>
-      <p>So easy to use, even your dog could do it.</p>
-
-      <h3>Elite Clientele</h3>
-      <p>We have all the dogs, the greatest dogs.</p>
-
-      <h3>Guaranteed to work.</h3>
-      <p>Find the love of your dog's life or your money back.</p>
+      <div class="container-fluid features-container">
+        <div class="feature-box">
+          <i
+            class="fa-solid fa-circle-check feature-icon fill-gradient-linear"
+          ></i>
+          <h3 class="heading-tertiary">Easy to use.</h3>
+          <p class="feature-text">So easy to use, even your dog could do it.</p>
+        </div>
+        <div class="feature-box">
+          <i class="fa-solid fa-bullseye feature-icon fill-gradient-linear"></i>
+          <h3 class="heading-tertiary">Elite Clientele</h3>
+          <p class="feature-text">We have all the dogs, the greatest dogs.</p>
+        </div>
+        <div class="feature-box">
+          <i class="fa-solid fa-heart feature-icon fill-gradient-linear"></i>
+          <h3 class="heading-tertiary">Guaranteed to work.</h3>
+          <p class="feature-text">
+            Find the love of your dog's life or your money back.
+          </p>
+        </div>
+      </div>
     </section>
 
     <!-- Testimonials -->

@@ -1,31 +1,44 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;900&family=Ubuntu:wght@300;400;500;700&display=swap");
 
 /* Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
 body {
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 /* Nav bar */
 .navbar {
-  margin-bottom: 3rem;
+  margin-bottom: 7.2rem;
 }
 
 .navbar-brand {
-  font-size: 2.5rem;
-}
-
-.nav-item {
-  font-size: 1.6rem;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 4rem;
+  font-weight: 500;
 }
 
 .nav-item:not(:last-child) {
-  margin-right: 1.5rem;
+  margin-right: 3rem;
+}
+
+.nav-link {
+  font-size: 1.8rem;
+  font-weight: 400;
 }
 
 /* Title Section */
 #title {
   background-color: #ff4c68;
-  height: 95vh;
+  color: #fff;
   overflow: hidden;
 }
 
@@ -35,17 +48,80 @@ body {
 
 .title-heading {
   font-family: "Montserrat", sans-serif;
-  font-size: 3rem;
+  font-size: 5.6rem;
   line-height: 1.5;
   font-weight: 900;
-  color: #fff;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
+/* Title Image */
 .title-img {
-  transform: rotate(25deg) scale(0.85) translate(-4rem, -2rem);
+  width: 50%;
+  transform: rotate(25deg);
+}
+
+/* Download Buttons */
+.download-button {
+  font-size: 1.6rem;
 }
 
 .apple-btn {
   margin-right: 1.5rem;
+}
+
+/* Features Section */
+.features-container {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  text-align: center;
+}
+
+.feature-box {
+  display: inline-block;
+  margin: 0;
+  width: 33%;
+}
+
+.feature-icon {
+  font-size: 3.2rem;
+  margin-bottom: 2rem;
+}
+
+/* Linear Gradient: see - https://codepen.io/fontawesome/pen/BEKpBy */
+
+.svg-settings {
+  /* Hiding this content since it's just settings. See - https://snook.ca/archives/html_and_css/hiding-content-for-accessibility */
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+/* linear gradient */
+.fill-gradient-linear path {
+  fill: url(#linear);
+}
+
+/* setting colors for linear gradient */
+.linear-stop1 {
+  stop-color: #ff654d;
+}
+
+.linear-stop2 {
+  stop-color: #cc3d53;
+}
+
+.heading-tertiary {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.feature-text {
+  color: #8f8f8f;
+  font-size: 1.4rem;
+  width: 55%;
+  margin: 0 auto;
 }
