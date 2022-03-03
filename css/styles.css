@@ -137,7 +137,7 @@ body {
 /* Testimonials Section */
 #testimonials {
   text-align: center;
-  background-color: #ef8172;
+  background: linear-gradient(to right, #ff8259, #ff4c68);
   color: #fff;
   font-size: 1.6rem;
 }
@@ -146,4 +146,18 @@ body {
   width: 15%;
   border-radius: 100%;
   margin: 2rem;
+}
+
+/* Press Section */
+#press {
+  text-align: center;
+  background: linear-gradient(to right, #ff8259, #ff4c68);
+}
+
+.press-logo {
+  width: 10%;
+  filter: brightness(0) invert(1);
+  opacity: 0.4;
+  padding: 5rem 0;
+  margin: 0 3rem;
 }
