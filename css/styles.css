@@ -72,9 +72,15 @@ body {
   overflow: hidden;
 }
 
+.col-right {
+  text-align: center;
+  padding-left: 5rem;
+  margin-top: 5rem;
+}
+
 /* Title Image */
 .title-img {
-  width: 50%;
+  width: 60%;
   transform: rotate(25deg);
 }
 
