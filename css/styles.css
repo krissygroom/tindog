@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;900&family=Ubuntu:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&family=Ubuntu:wght@300;400;500;700&display=swap");
 
 /* Base Styles */
 * {
@@ -13,6 +13,36 @@ html {
 
 body {
   font-family: "Montserrat", sans-serif;
+}
+
+.container-fluid-lg {
+  padding: 12rem 25.2rem;
+}
+
+.container-fluid {
+  padding: 5rem 25.2rem;
+}
+
+.heading-primary {
+  font-family: "Montserrat", sans-serif;
+  font-size: 5.6rem;
+  line-height: 1.5;
+  font-weight: 900;
+  letter-spacing: 1.5px;
+  margin-bottom: 3rem;
+}
+
+.heading-secondary {
+  font-size: 4.2rem;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 1px;
+}
+
+.heading-tertiary {
+  font-size: 2.4rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
 }
 
 /* Nav bar */
@@ -42,18 +72,6 @@ body {
   overflow: hidden;
 }
 
-.container-fluid {
-  padding: 3% 15%;
-}
-
-.title-heading {
-  font-family: "Montserrat", sans-serif;
-  font-size: 5.6rem;
-  line-height: 1.5;
-  font-weight: 900;
-  margin-bottom: 3rem;
-}
-
 /* Title Image */
 .title-img {
   width: 50%;
@@ -71,11 +89,6 @@ body {
 
 /* Features Section */
 
-#features {
-  padding-top: 10rem;
-  padding-bottom: 10rem;
-}
-
 .feature-box {
   text-align: center;
   margin-bottom: 4rem;
@@ -83,16 +96,11 @@ body {
 
 .feature-icon:not(:last-child) {
   margin-bottom: 2rem;
+  transition: filter 0.2s;
 }
 
 .feature-icon:hover {
-  filter: brightness(1.2);
-}
-
-.heading-tertiary {
-  font-size: 2.4rem;
-  font-weight: 600;
-  margin-bottom: 1rem;
+  filter: brightness(1.3);
 }
 
 .feature-text {
@@ -119,9 +127,23 @@ body {
 
 /* setting colors for linear gradient */
 .linear-stop1 {
-  stop-color: #ff654d;
+  stop-color: #ef8172;
 }
 
 .linear-stop2 {
-  stop-color: #cc3d53;
+  stop-color: #ff4c68;
+}
+
+/* Testimonials Section */
+#testimonials {
+  text-align: center;
+  background-color: #ef8172;
+  color: #fff;
+  font-size: 1.6rem;
+}
+
+.testimonial-img {
+  width: 15%;
+  border-radius: 100%;
+  margin: 2rem;
 }
