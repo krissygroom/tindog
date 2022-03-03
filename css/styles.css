@@ -16,20 +16,20 @@ body {
 }
 
 .container-fluid-lg {
-  padding: 12rem 18%;
+  padding: 12rem 15%;
 }
 
 .container-fluid {
-  padding: 5rem 18%;
+  padding: 5rem 15%;
 }
 
 @media (max-width: 75em) {
   .container-fluid-lg {
-    padding: 12rem 12rem;
+    padding: 12rem 12%;
   }
 
   .container-fluid {
-    padding: 5rem 12rem;
+    padding: 5rem 12%;
   }
 }
 
@@ -42,7 +42,7 @@ body {
 }
 
 .heading-secondary {
-  font-size: 4.2rem;
+  font-size: 4rem;
   font-weight: 700;
   line-height: 1.5;
   letter-spacing: 1px;
@@ -51,7 +51,6 @@ body {
 .heading-tertiary {
   font-size: 2.4rem;
   font-weight: 600;
-  margin-bottom: 1rem;
 }
 
 /* Nav bar */
@@ -124,7 +123,9 @@ body {
 
 .feature-text {
   color: #8f8f8f;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
+  width: 80%;
+  margin: 0 auto;
 }
 
 .col-lg-4:last-child {
@@ -163,14 +164,11 @@ body {
   /* height: 85vh; */
   /* Photo by Kojirou Sasak Unsplash
    */
-  background-image: linear-gradient(
-      to right bottom,
-      rgba(255, 130, 89, 0.8),
-      rgba(255, 76, 103, 0.95)
-    ),
-    url(../images/dogs-kissing.jpg);
-  background-size: cover;
-  background-position: center;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 130, 89, 1) 0%,
+    rgba(255, 76, 103, 1) 70%
+  );
   color: #fff;
   font-size: 1.6rem;
 }
@@ -179,6 +177,7 @@ body {
   width: 10%;
   border-radius: 100%;
   margin: 2rem;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
 }
 
 /* Carousel */
@@ -189,7 +188,7 @@ body {
 }
 
 .carousel-item {
-  padding: 10rem 20rem;
+  padding: 12rem 20rem;
 }
 
 /* Press Section */
@@ -202,4 +201,41 @@ body {
   filter: brightness(0) invert(1);
   opacity: 0.4;
   padding: 0 1rem;
+}
+
+/* Pricing Section */
+#pricing {
+  font-size: 1.6rem;
+  padding: 12rem;
+  text-align: center;
+}
+
+.pricing-heading,
+.card .heading-secondary {
+  background-color: #ff4c68;
+  background-image: linear-gradient(#ef8172, #ff4c68);
+  background-size: 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+.pricing-col {
+  padding: 3% 2%;
+}
+
+.card {
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+}
+
+.pricing-text {
+  color: #8f8f8f;
+  font-size: 1.6rem;
+}
+
+.pricing-btn {
+  font-size: 1.6rem;
+  margin: 1rem;
 }
