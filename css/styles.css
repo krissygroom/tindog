@@ -148,6 +148,17 @@ body {
   margin: 2rem;
 }
 
+/* Carousel */
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  width: 4rem;
+  height: 4rem;
+}
+
+.carousel-item {
+  padding: 12rem 25.2rem;
+}
+
 /* Press Section */
 #press {
   text-align: center;
@@ -158,6 +169,5 @@ body {
   width: 10%;
   filter: brightness(0) invert(1);
   opacity: 0.4;
-  padding: 5rem 0;
-  margin: 0 3rem;
+  margin: 5rem 4rem;
 }
