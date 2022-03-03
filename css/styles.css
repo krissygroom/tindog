@@ -70,21 +70,34 @@ body {
 }
 
 /* Features Section */
-.features-container {
-  padding-top: 8rem;
-  padding-bottom: 8rem;
-  text-align: center;
+
+#features {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
 }
 
 .feature-box {
-  display: inline-block;
-  margin: 0;
-  width: 33%;
+  text-align: center;
+  margin-bottom: 4rem;
 }
 
-.feature-icon {
-  font-size: 3.2rem;
+.feature-icon:not(:last-child) {
   margin-bottom: 2rem;
+}
+
+.feature-icon:hover {
+  filter: brightness(1.2);
+}
+
+.heading-tertiary {
+  font-size: 2.4rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.feature-text {
+  color: #8f8f8f;
+  font-size: 1.4rem;
 }
 
 /* Linear Gradient: see - https://codepen.io/fontawesome/pen/BEKpBy */
@@ -111,17 +124,4 @@ body {
 
 .linear-stop2 {
   stop-color: #cc3d53;
-}
-
-.heading-tertiary {
-  font-size: 2rem;
-  font-weight: 600;
-  margin-bottom: 1rem;
-}
-
-.feature-text {
-  color: #8f8f8f;
-  font-size: 1.4rem;
-  width: 55%;
-  margin: 0 auto;
 }
