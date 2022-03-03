@@ -16,11 +16,21 @@ body {
 }
 
 .container-fluid-lg {
-  padding: 12rem 25.2rem;
+  padding: 12rem 18%;
 }
 
 .container-fluid {
-  padding: 5rem 25.2rem;
+  padding: 5rem 18%;
+}
+
+@media (max-width: 75em) {
+  .container-fluid-lg {
+    padding: 12rem 12rem;
+  }
+
+  .container-fluid {
+    padding: 5rem 12rem;
+  }
 }
 
 .heading-primary {
@@ -29,7 +39,6 @@ body {
   line-height: 1.5;
   font-weight: 900;
   letter-spacing: 1.5px;
-  margin-bottom: 3rem;
 }
 
 .heading-secondary {
@@ -47,7 +56,7 @@ body {
 
 /* Nav bar */
 .navbar {
-  margin-bottom: 7.2rem;
+  margin-bottom: 8.6rem;
 }
 
 .navbar-brand {
@@ -70,6 +79,10 @@ body {
   background-color: #ff4c68;
   color: #fff;
   overflow: hidden;
+}
+
+.title-heading {
+  margin-bottom: 5rem;
 }
 
 .col-right {
@@ -100,7 +113,7 @@ body {
   margin-bottom: 4rem;
 }
 
-.feature-icon:not(:last-child) {
+.feature-icon {
   margin-bottom: 2rem;
   transition: filter 0.2s;
 }
@@ -112,6 +125,10 @@ body {
 .feature-text {
   color: #8f8f8f;
   font-size: 1.4rem;
+}
+
+.col-lg-4:last-child {
+  margin-bottom: 0;
 }
 
 /* Linear Gradient: see - https://codepen.io/fontawesome/pen/BEKpBy */
@@ -143,13 +160,23 @@ body {
 /* Testimonials Section */
 #testimonials {
   text-align: center;
-  background: linear-gradient(to right, #ff8259, #ff4c68);
+  /* height: 85vh; */
+  /* Photo by Kojirou Sasak Unsplash
+   */
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(255, 130, 89, 0.8),
+      rgba(255, 76, 103, 0.95)
+    ),
+    url(../images/dogs-kissing.jpg);
+  background-size: cover;
+  background-position: center;
   color: #fff;
   font-size: 1.6rem;
 }
 
 .testimonial-img {
-  width: 15%;
+  width: 10%;
   border-radius: 100%;
   margin: 2rem;
 }
@@ -162,18 +189,17 @@ body {
 }
 
 .carousel-item {
-  padding: 12rem 25.2rem;
+  padding: 10rem 20rem;
 }
 
 /* Press Section */
-#press {
-  text-align: center;
-  background: linear-gradient(to right, #ff8259, #ff4c68);
-}
 
+#press {
+  padding: 3rem 0;
+}
 .press-logo {
-  width: 10%;
+  width: 12%;
   filter: brightness(0) invert(1);
   opacity: 0.4;
-  margin: 5rem 4rem;
+  padding: 0 1rem;
 }
