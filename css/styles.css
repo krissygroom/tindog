@@ -244,8 +244,8 @@ body {
 #cta {
   background-image: linear-gradient(
       to right bottom,
-      rgba(255, 76, 103, 0.85),
-      rgba(255, 76, 103, 0.85)
+      rgba(239, 129, 114, 0.8) 0%,
+      rgba(255, 76, 103, 0.8) 40%
     ),
     url(../images/dogs-kissing.jpg);
   background-size: cover;
@@ -256,6 +256,31 @@ body {
 
 .cta-heading {
   margin-bottom: 5rem;
+}
+
+/* Footer Section */
+
+#footer {
+  text-align: center;
+}
+
+.container-footer {
+  padding: 3% 15%;
+}
+
+.container-footer p {
+  font-size: 1.2rem;
+}
+
+.social-icon {
+  font-size: 1.6rem;
+  text-decoration: none;
+  margin: 0.5rem;
+  color: #ff4c68;
+}
+
+.copyright {
+  margin-top: 1rem;
 }
 
 /* Media Queries */
