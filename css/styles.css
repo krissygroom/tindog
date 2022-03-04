@@ -224,6 +224,11 @@ body {
 
 .pricing-col {
   padding: 3% 2%;
+  transition: all 0.2s;
+}
+
+.pricing-col:hover {
+  transform: scale(1.1);
 }
 
 .card {
