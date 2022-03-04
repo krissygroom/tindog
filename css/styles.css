@@ -23,16 +23,6 @@ body {
   padding: 3% 15% 8%;
 }
 
-@media (max-width: 75em) {
-  .container-fluid-lg {
-    padding: 12rem 12%;
-  }
-
-  .container-fluid {
-    padding: 5rem 12%;
-  }
-}
-
 .heading-primary {
   font-family: "Montserrat", sans-serif;
   font-size: 5.6rem;
@@ -75,7 +65,11 @@ body {
 
 /* Title Section */
 #title {
-  background-color: #ff4c68;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 130, 89, 1) 0%,
+    rgba(255, 76, 103, 1) 40%
+  );
   color: #fff;
 }
 
@@ -92,8 +86,9 @@ body {
   width: 50%;
   transform: rotate(25deg);
   position: absolute;
-  top: 0;
-  left: 8%;
+  /* top: 0;
+  left: 8%; */
+  right: 25%;
 }
 
 /* Download Buttons */
@@ -172,7 +167,7 @@ body {
   background: linear-gradient(
     to right bottom,
     rgba(255, 130, 89, 1) 0%,
-    rgba(255, 76, 103, 1) 70%
+    rgba(255, 76, 103, 1) 40%
   );
   color: #fff;
   font-size: 1.6rem;
@@ -193,7 +188,7 @@ body {
 }
 
 .carousel-item {
-  padding: 12rem 20rem;
+  padding: 12rem 25rem;
 }
 
 /* Press Section */
@@ -204,7 +199,7 @@ body {
 .press-logo {
   width: 12%;
   filter: brightness(0) invert(1);
-  opacity: 0.4;
+  opacity: 0.5;
   padding: 0 1rem;
 }
 
@@ -243,4 +238,151 @@ body {
 .pricing-btn {
   font-size: 1.6rem;
   margin: 1rem;
+}
+
+/* CTA Section */
+#cta {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(255, 76, 103, 0.85),
+      rgba(255, 76, 103, 0.85)
+    ),
+    url(../images/dogs-kissing.jpg);
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-align: center;
+}
+
+.cta-heading {
+  margin-bottom: 5rem;
+}
+
+/* Media Queries */
+/* 1200px */
+@media (max-width: 75em) {
+  .container-fluid-lg {
+    padding: 12rem 13%;
+  }
+
+  .container-fluid {
+    padding: 5rem 13%;
+  }
+
+  .navbar {
+    margin-bottom: 6rem;
+  }
+
+  .heading-primary {
+    font-size: 5.2rem;
+  }
+
+  .carousel-item {
+    padding: 12rem 12rem;
+  }
+}
+
+/* 992px */
+@media (max-width: 62em) {
+  html {
+    font-size: 56.25;
+  }
+
+  .container-fluid-lg {
+    padding: 12rem 6%;
+  }
+
+  .container-fluid {
+    padding: 5rem 6% 13%;
+  }
+
+  .navbar-brand {
+    font-size: 3rem;
+  }
+
+  .heading-primary {
+    font-size: 4.4rem;
+  }
+
+  .heading-secondary {
+    font-size: 3.6rem;
+  }
+
+  #title {
+    text-align: center;
+  }
+
+  .title-img {
+    position: static;
+    transform: rotate(0);
+    margin-top: 5rem;
+  }
+
+  .press-logo {
+    width: 18%;
+  }
+
+  .testimonial-img {
+    width: 20%;
+  }
+
+  #pricing {
+    padding: 8rem 5rem;
+  }
+
+  .pricing-subtitle {
+    margin-bottom: 3rem;
+  }
+
+  .empty-p {
+    display: none;
+  }
+}
+
+@media (max-width: 36em) {
+  .container-fluid-lg {
+    padding: 10rem 6%;
+  }
+
+  .container-fluid {
+    padding: 3rem 6% 13%;
+  }
+
+  .heading-testimonial {
+    font-size: 2.8rem;
+  }
+
+  .heading-secondary {
+    font-size: 2.8rem;
+  }
+
+  .title-heading {
+    font-size: 4rem;
+  }
+
+  .apple-btn {
+    margin-right: 0;
+  }
+
+  .download-button {
+    margin-top: 1rem;
+    margin-left: 1rem;
+  }
+
+  .carousel-item {
+    padding: 10rem 4rem;
+  }
+
+  .carousel-control-next-icon,
+  .carousel-control-prev-icon {
+    margin-top: 10rem;
+  }
+
+  .testimonial-img {
+    width: 25%;
+  }
+
+  #pricing {
+    padding: 8rem 3rem;
+  }
 }
