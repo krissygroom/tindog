@@ -16,7 +16,7 @@ body {
 }
 
 .container-fluid-lg {
-  padding: 8% 15%;
+  padding: 10% 15%;
 }
 
 .container-fluid {
@@ -188,7 +188,7 @@ body {
 }
 
 .carousel-item {
-  padding: 12rem 25rem;
+  padding: 10% 25rem;
 }
 
 /* Press Section */
@@ -206,7 +206,7 @@ body {
 /* Pricing Section */
 #pricing {
   font-size: 1.6rem;
-  padding: 12rem;
+  /* padding: 12rem; */
   text-align: center;
 }
 
@@ -277,6 +277,11 @@ body {
   text-decoration: none;
   margin: 0.5rem;
   color: #ff4c68;
+}
+
+.social-icon:hover {
+  color: #ff4c68;
+  filter: brightness(1.5);
 }
 
 .copyright {
