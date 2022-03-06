@@ -15,6 +15,11 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+h1,
+h2 {
+  line-height: 1.5;
+}
+
 .container-fluid-lg {
   padding: 10% 15%;
 }
@@ -23,10 +28,9 @@ body {
   padding: 3% 15% 8%;
 }
 
+/* Headings */
 .heading-primary {
-  font-family: "Montserrat", sans-serif;
   font-size: 5.6rem;
-  line-height: 1.5;
   font-weight: 900;
   letter-spacing: 1.5px;
 }
@@ -34,7 +38,6 @@ body {
 .heading-secondary {
   font-size: 4rem;
   font-weight: 700;
-  line-height: 1.5;
   letter-spacing: 1px;
 }
 
@@ -81,13 +84,10 @@ body {
   position: relative;
 }
 
-/* Title Image */
 .title-img {
   width: 50%;
   transform: rotate(25deg);
   position: absolute;
-  /* top: 0;
-  left: 8%; */
   right: 25%;
 }
 
@@ -132,8 +132,7 @@ body {
   margin-bottom: 0;
 }
 
-/* Linear Gradient: see - https://codepen.io/fontawesome/pen/BEKpBy */
-
+/* Linear Gradient for fa icons: see - https://codepen.io/fontawesome/pen/BEKpBy */
 .svg-settings {
   /* Hiding this content since it's just settings. See - https://snook.ca/archives/html_and_css/hiding-content-for-accessibility */
   position: absolute !important;
@@ -161,9 +160,6 @@ body {
 /* Testimonials Section */
 #testimonials {
   text-align: center;
-  /* height: 85vh; */
-  /* Photo by Kojirou Sasak Unsplash
-   */
   background: linear-gradient(
     to right bottom,
     rgba(255, 130, 89, 1) 0%,
@@ -192,7 +188,6 @@ body {
 }
 
 /* Press Section */
-
 #press {
   padding: 3rem 0;
 }
@@ -206,7 +201,6 @@ body {
 /* Pricing Section */
 #pricing {
   font-size: 1.6rem;
-  /* padding: 12rem; */
   text-align: center;
 }
 
@@ -264,7 +258,6 @@ body {
 }
 
 /* Footer Section */
-
 #footer {
   text-align: center;
 }
@@ -374,6 +367,7 @@ body {
   }
 }
 
+/* 576 px */
 @media (max-width: 36em) {
   .container-fluid-lg {
     padding: 10rem 6%;
